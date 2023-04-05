@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/akaya_telivigala</item>
+        <item>@font/amarante</item>
+        <item>@font/aref_ruqaa</item>
+        <item>@font/berkshire_swash</item>
+        <item>@font/bree_serif</item>
+        <item>@font/calistoga</item>
+        <item>@font/ceviche_one</item>
+        <item>@font/copse</item>
+        <item>@font/coustard</item>
+        <item>@font/coustard_black</item>
+        <item>@font/gabriela</item>
+        <item>@font/judson_bold</item>
+        <item>@font/langar</item>
+        <item>@font/maiden_orange</item>
+        <item>@font/original_surfer</item>
+        <item>@font/pangolin</item>
+        <item>@font/rum_raisin</item>
+        <item>@font/salsa</item>
+        <item>@font/secular_one</item>
+        <item>@font/special_elite</item>
+        <item>@font/trocchi</item>
+        <item>@font/yatra_one</item>
+    </array>
+</resources>
