@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
+
 public class BMRActivity extends AppCompatActivity {
     RadioButton rbGender;
     RadioGroup rgGender;
@@ -34,6 +36,11 @@ public class BMRActivity extends AppCompatActivity {
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                                "Calculating your BMR!",
+                                Toast.LENGTH_LONG)
+                        .show();
+
                 int selectedID=rgGender.getCheckedRadioButtonId();
                 rbGender=findViewById(selectedID);
 
@@ -58,6 +65,21 @@ public class BMRActivity extends AppCompatActivity {
                 // passing the bundle into the intent
                 i.putExtras(bundle);
                 startActivity(i);
+            }
+        });
+
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                                "Clearing all input values!",
+                                Toast.LENGTH_LONG)
+                        .show();
+
+                rgGender.clearCheck();
+                weight.setText("");
+                height.setText("");
+                age.setText("");
             }
         });
     }

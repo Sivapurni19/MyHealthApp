@@ -4,18 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg5"
     tools:context=".BMRActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="203dp"
-        android:layout_height="46dp"
-        android:text="BMR Calculator"
+        android:layout_width="278dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/langar"
+        android:text="BMR CALCULATOR"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032" />
@@ -30,10 +34,23 @@
         app:layout_constraintTop_toTopOf="parent" >
 
         <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="315dp"
+            android:layout_height="52dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="Male"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <RadioButton
             android:id="@+id/radioButton2"
-            android:layout_width="324dp"
-            android:layout_height="47dp"
-            android:text="Female" />
+            android:layout_width="315dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/bree_serif"
+            android:text="Female"
+            android:textColor="#F8F8F8"
+            android:textSize="18sp" />
+
     </RadioGroup>
 
     <EditText
@@ -41,9 +58,10 @@
         android:layout_width="323dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:fontFamily="@font/bree_serif"
+        android:hint="Enter weight (kg)"
         android:inputType="textPersonName"
         android:text=""
-        android:hint="Enter weight (kg)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
@@ -56,9 +74,10 @@
         android:layout_width="323dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:fontFamily="@font/bree_serif"
+        android:hint="Enter height (cm)"
         android:inputType="textPersonName"
         android:text=""
-        android:hint="Enter height (cm)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
@@ -71,9 +90,10 @@
         android:layout_width="323dp"
         android:layout_height="42dp"
         android:ems="10"
+        android:fontFamily="@font/bree_serif"
+        android:hint="Age"
         android:inputType="textPersonName"
         android:text=""
-        android:hint="Age"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
@@ -83,9 +103,13 @@
 
     <Button
         android:id="@+id/btnCalculate"
-        android:layout_width="325dp"
-        android:layout_height="48dp"
+        android:layout_width="322dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/sriracha"
         android:text="CALCULATE"
+        android:textSize="20sp"
+        android:backgroundTint="#00BFAE"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.453"
@@ -95,38 +119,30 @@
 
     <Button
         android:id="@+id/btnClear"
-        android:layout_width="325dp"
-        android:layout_height="48dp"
-        android:text="CLEAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
-
-    <RadioButton
-        android:id="@+id/radioButton"
         android:layout_width="322dp"
-        android:layout_height="48dp"
-        android:text="Male"
+        android:layout_height="53dp"
+        android:fontFamily="@font/sriracha"
+        android:text="CLEAR"
+        android:textSize="20sp"
+        android:backgroundTint="#00BCD4"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.449"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintVertical_bias="0.941" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="405dp"
-        android:layout_height="228dp"
+        android:layout_width="373dp"
+        android:layout_height="198dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.132"
-        app:srcCompat="@drawable/metabolism" />
+        app:layout_constraintVertical_bias="0.14"
+        app:srcCompat="@drawable/metabolism_level" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

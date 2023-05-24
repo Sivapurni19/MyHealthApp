@@ -4,14 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg5"
     tools:context=".BMRResult">
 
     <TextView
         android:id="@+id/tvDisp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:fontFamily="@font/gabriela"
         android:hint="Output"
+        android:text=""
+        android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,9 +25,12 @@
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="308dp"
-        android:layout_height="45dp"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/sriracha"
         android:text="BACK"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

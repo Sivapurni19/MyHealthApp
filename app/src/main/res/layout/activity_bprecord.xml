@@ -4,11 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg3"
-    tools:context=".BloodPressureResult">
+    tools:context=".BPRecord">
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="432dp"
+        android:layout_height="764dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg12" />
 
     <TextView
-        android:id="@+id/tvDisp"
+        android:id="@+id/tvDisp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/gabriela"
@@ -26,7 +36,7 @@
         android:id="@+id/btnBack"
         android:layout_width="308dp"
         android:layout_height="58dp"
-        android:backgroundTint="#CDDC39"
+        android:backgroundTint="#3A8F87"
         android:fontFamily="@font/sriracha"
         android:text="BACK"
         android:textColor="#FFFFFF"
@@ -37,27 +47,10 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
-
-    <Button
-        android:id="@+id/btnSaveRecord"
-        android:layout_width="308dp"
-        android:layout_height="58dp"
-        android:backgroundTint="#80E609"
-        android:fontFamily="@font/sriracha"
-        android:text="SAVE RECORD"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.891" />
+        app:layout_constraintVertical_bias="0.976" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/langar"
@@ -72,15 +65,15 @@
         app:layout_constraintVertical_bias="0.062" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="304dp"
-        android:layout_height="279dp"
+        android:id="@+id/imageView19"
+        android:layout_width="200dp"
+        android:layout_height="206dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintEnd_toEndOf="@+id/imageView18"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.143"
-        app:srcCompat="@drawable/bp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_bias="0.175"
+        app:srcCompat="@drawable/blood_pressure" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>

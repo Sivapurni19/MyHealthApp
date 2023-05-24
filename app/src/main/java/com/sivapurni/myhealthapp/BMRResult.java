@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 public class BMRResult extends AppCompatActivity {
     Button back;
     TextView disp;
@@ -17,7 +19,7 @@ public class BMRResult extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmrresult);
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("BMR");
+        actionBar.setTitle("BLOOD PRESSURE");
         actionBar.setSubtitle("Dashboard");
         back=findViewById(R.id.btnBack);
         disp=findViewById(R.id.tvDisp);
@@ -32,6 +34,11 @@ public class BMRResult extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                        Toast.makeText(getApplicationContext(),
+                                        "Back to BMR Page",
+                                        Toast.LENGTH_LONG)
+                                .show();
+
                 Intent intent=new Intent(getApplicationContext(), BMRActivity.class);
                 startActivity(intent);
             }

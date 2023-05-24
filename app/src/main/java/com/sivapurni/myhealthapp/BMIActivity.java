@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 public class BMIActivity extends AppCompatActivity {
     //1. declare
     EditText name,weight,height;
@@ -34,6 +36,10 @@ public class BMIActivity extends AppCompatActivity {
             @Override
             //onClick is the implementation method
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                                "Calculating your BMI!",
+                                Toast.LENGTH_LONG)
+                        .show();
                 //4. get value
                 nama=name.getText().toString();
                 berat=Double.parseDouble(weight.getText().toString());
@@ -48,6 +54,11 @@ public class BMIActivity extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                                "Resetting all data!",
+                                Toast.LENGTH_LONG)
+                        .show();
+
                 name.setText("");
                 weight.setText("");
                 height.setText("");

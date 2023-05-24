@@ -12,6 +12,27 @@
         android:theme="@style/Theme.MyHealthApp"
         tools:targetApi="31">
         <activity
+            android:name=".ViewDir"
+            android:exported="false" />
+        <activity
+            android:name=".BPRecord"
+            android:exported="false" />
+        <activity
+            android:name=".ViewUserCredentials"
+            android:exported="false" />
+        <activity
+            android:name=".UserRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".BPTracker"
+            android:exported="false" />
+        <activity
+            android:name=".DiabetesResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiabetesTestActivity"
+            android:exported="false" />
+        <activity
             android:name=".BloodPressureResult"
             android:exported="false" />
         <activity

@@ -10,8 +10,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
     CardView menuBmi, menuBloodPressure, menuDiabetic, menuBmr;
+    FloatingActionButton floatingActionButton1;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -30,13 +33,14 @@ public class MainActivity extends AppCompatActivity {
         menuBloodPressure = findViewById(R.id.menuBloodPressure);
         menuDiabetic = findViewById(R.id.menuDiabetic);
         menuBmr = findViewById(R.id.menuBmr);
+        floatingActionButton1 = findViewById(R.id.floatingActionButton1);
 
 
         menuBmi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),
-                                "You click BMI Calculator",
+                                "You clicked BMI Calculator",
                                 Toast.LENGTH_LONG)
                         .show();
 
@@ -45,19 +49,55 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         menuBmr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),
-                                "You click BMR Calculator",
+                                "You clicked BMR Calculator",
                                 Toast.LENGTH_LONG)
                         .show();
 
                 Intent bmrIntent = new Intent(getApplicationContext(), BMRActivity.class);
                 startActivity(bmrIntent);
+            }
+        });
+
+        menuBloodPressure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                                "You clicked Blood Pressure Test",
+                                Toast.LENGTH_LONG)
+                        .show();
+
+                Intent BPIntent = new Intent(getApplicationContext(), BPTracker.class);
+                startActivity(BPIntent);
+            }
+        });
+
+        menuDiabetic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                                "You clicked Diabetes Test",
+                                Toast.LENGTH_LONG)
+                        .show();
+
+                Intent diabeticIntent = new Intent(getApplicationContext(), DiabetesTestActivity.class);
+                startActivity(diabeticIntent);
+            }
+        });
+
+        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                                "User Credential",
+                                Toast.LENGTH_LONG)
+                        .show();
+
+                Intent mainIntent = new Intent(getApplicationContext(), ViewUserCredentials.class);
+                startActivity(mainIntent);
             }
         });
     }
