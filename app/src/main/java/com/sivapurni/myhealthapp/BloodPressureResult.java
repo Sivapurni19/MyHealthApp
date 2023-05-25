@@ -43,7 +43,7 @@ public class BloodPressureResult extends AppCompatActivity {
                         "\nBP Status: Result: "+BPStatus);
 
         SQLiteDatabase mDatabase = openOrCreateDatabase("healthDB", MODE_PRIVATE, null);
-        mDatabase.execSQL("CREATE TABLE IF NOT EXISTS BPRecord(Date VARCHAR, Time VARCHAR," +
+        mDatabase.execSQL("CREATE TABLE IF NOT EXISTS BPRecord(id INTEGER PRIMARY KEY AUTOINCREMENT,Date VARCHAR, Time VARCHAR," +
                 " Systolic INT, Diastolic INT, BPStatus VARCHAR)");
 
         back.setOnClickListener(new View.OnClickListener() {

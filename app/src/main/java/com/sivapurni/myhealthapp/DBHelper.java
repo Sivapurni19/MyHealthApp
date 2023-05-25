@@ -49,7 +49,7 @@ public class DBHelper extends SQLiteOpenHelper {
                         cursor.getString(1),
                         cursor.getString(2),
                         cursor.getString(3),
-                        cursor.getString(4),
+                        cursor.getInt(4),
                         cursor.getInt(5)));
             } while (cursor.moveToNext());
             // moving our cursor to next.
