@@ -37,11 +37,11 @@ public class DirRVAdapter extends
         // to our views of recycler view item.
         dirModal modal = dirModalArrayList.get(position);
         holder.dirIDTV.setText(String.valueOf(modal.getId()));
-        holder.dirNameTV.setText(modal.getName());
-        holder.dirDeptTV.setText(modal.getDept());
-        holder.dirMailTV.setText(modal.getMail());
-        holder.dirPhoneTV.setText(modal.getPhoneNo());
-        holder.dirExtTV.setText(String.valueOf(modal.getExt()));
+        holder.dirNameTV.setText(modal.getDate());
+        holder.dirDeptTV.setText(modal.getTime());
+        holder.dirMailTV.setText(modal.getSystolic());
+        holder.dirPhoneTV.setText(modal.getDiastolic());
+        holder.dirExtTV.setText(String.valueOf(modal.getBpStatus()));
     }
     @Override
     public int getItemCount() {

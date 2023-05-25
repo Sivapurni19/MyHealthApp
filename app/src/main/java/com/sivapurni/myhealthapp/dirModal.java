@@ -1,50 +1,56 @@
 package com.sivapurni.myhealthapp;
 
 public class dirModal {
-    String name,mail,phoneNo,dept;
-    int id,ext;
+    String date,time,bpStatus;
+    int systolic,diastolic,id;
     public dirModal() {
     }
-    public dirModal(String name, String dept,String mail, String phoneNo,
-                    int ext) {
-        this.name = name;
-        this.mail = mail;
-        this.phoneNo = phoneNo;
-        this.dept = dept;
-        this.ext = ext;
+    public dirModal(String date, String time,String bpStatus, int systolic,
+                    int diastolic) {
+        this.date = date;
+        this.time = time;
+        this.bpStatus = bpStatus;
+        this.systolic = systolic;
+        this.diastolic = diastolic;
     }
-    public dirModal(int id,String name,String dept, String phoneNo,String
-            mail, int ext) {
-        this.name = name;
-        this.mail = mail;
-        this.phoneNo = phoneNo;
-        this.dept = dept;
-        this.id = id;
-        this.ext = ext;
+    public dirModal(int id,String time,String date, String bpStatus,int
+            systolic, int diastolic) {
+        this.date = date;
+        this.time = time;
+        this.bpStatus = bpStatus;
+        this.systolic = systolic;
+        this.diastolic = diastolic;
     }
-    public String getName() {
-        return name;
+    public String getDate() {
+        return date;
     }
-    public void setName(String name) {
-        this.name = name;
+    public void setDate(String name) {
+        this.date = date;
     }
-    public String getMail() {
-        return mail;
+    public String getTime() {
+        return time;
     }
-    public void setMail(String mail) {
-        this.mail = mail;
+    public void setTime(String mail) {
+        this.time = time;
     }
-    public String getPhoneNo() {
-        return phoneNo;
+    public String getBpStatus() {
+        return bpStatus;
     }
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
+    public void setBpStatus(String phoneNo) {
+        this.bpStatus = bpStatus;
     }
-    public String getDept() {
-        return dept;
+    public int getSystolic() {
+        return systolic;
     }
-    public void setDept(String dept) {
-        this.dept = dept;
+    public void setSystolic(String dept) {
+        this.systolic = systolic;
+    }
+
+    public int getDiastolic() {
+        return diastolic;
+    }
+    public void setDiastolic(String dept) {
+        this.diastolic = diastolic;
     }
 
     public int getId() {
@@ -53,10 +59,6 @@ public class dirModal {
     public void setId(int id) {
         this.id = id;
     }
-    public int getExt() {
-        return ext;
-    }
-    public void setExt(int ext) {
-        this.ext = ext;
-    }
+
+
 }

@@ -45,12 +45,11 @@ public class DBHelper extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 // adding the data from cursor to our array list.
-                dirModalArrayList.add(new dirModal(cursor.getInt(0),
+                dirModalArrayList.add(new dirModal(cursor.getString(0),
                         cursor.getString(1),
                         cursor.getString(2),
-                        cursor.getString(3),
-                        cursor.getString(4),
-                        cursor.getInt(5)));
+                        cursor.getInt(3),
+                        cursor.getInt(4)));
             } while (cursor.moveToNext());
             // moving our cursor to next.
         }
