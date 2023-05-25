@@ -1,56 +1,57 @@
 package com.sivapurni.myhealthapp;
 
 public class dirModal {
-    String date,time,bpStatus;
-    int systolic,diastolic,id;
+    String Date,Time,BPStatus;
+    int Systolic,Diastolic,id;
     public dirModal() {
     }
     public dirModal(String date, String time,String bpStatus, int systolic,
                     int diastolic) {
-        this.date = date;
-        this.time = time;
-        this.bpStatus = bpStatus;
-        this.systolic = systolic;
-        this.diastolic = diastolic;
+        this.Date = date;
+        this.Time = time;
+        this.BPStatus = bpStatus;
+        this.Systolic = systolic;
+        this.Diastolic = diastolic;
     }
     public dirModal(int id,String time,String date, String bpStatus,int
             systolic, int diastolic) {
-        this.date = date;
-        this.time = time;
-        this.bpStatus = bpStatus;
-        this.systolic = systolic;
-        this.diastolic = diastolic;
+        this.id = id;
+        this.Date = date;
+        this.Time = time;
+        this.BPStatus = bpStatus;
+        this.Systolic = systolic;
+        this.Diastolic = diastolic;
     }
     public String getDate() {
-        return date;
+        return Date;
     }
     public void setDate(String name) {
-        this.date = date;
+        this.Date = Date;
     }
     public String getTime() {
-        return time;
+        return Time;
     }
     public void setTime(String mail) {
-        this.time = time;
+        this.Time = Time;
     }
     public String getBpStatus() {
-        return bpStatus;
+        return BPStatus;
     }
     public void setBpStatus(String phoneNo) {
-        this.bpStatus = bpStatus;
+        this.BPStatus = BPStatus;
     }
     public int getSystolic() {
-        return systolic;
+        return Systolic;
     }
     public void setSystolic(String dept) {
-        this.systolic = systolic;
+        this.Systolic = Systolic;
     }
 
     public int getDiastolic() {
-        return diastolic;
+        return Diastolic;
     }
     public void setDiastolic(String dept) {
-        this.diastolic = diastolic;
+        this.Diastolic = Diastolic;
     }
 
     public int getId() {

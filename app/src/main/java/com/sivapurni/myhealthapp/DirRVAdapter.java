@@ -39,8 +39,8 @@ public class DirRVAdapter extends
         holder.dirIDTV.setText(String.valueOf(modal.getId()));
         holder.dirNameTV.setText(modal.getDate());
         holder.dirDeptTV.setText(modal.getTime());
-        holder.dirMailTV.setText(modal.getSystolic());
-        holder.dirPhoneTV.setText(modal.getDiastolic());
+        holder.dirMailTV.setText(Integer.toString(modal.getSystolic()));
+        holder.dirPhoneTV.setText(Integer.toString(modal.getDiastolic()));
         holder.dirExtTV.setText(String.valueOf(modal.getBpStatus()));
     }
     @Override
